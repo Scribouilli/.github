@@ -68,3 +68,15 @@ graph TB
     style Client fill:#fff,stroke:#f66,stroke-width:2px
     style ServeurPasANous fill:#fff,stroke:#f66,stroke-width:2px
 ```
+
+3/
+
+```mermaid
+graph LR
+  SiteScribouilli["Sites Scribouillis"] --> Monsite@{ shape: procs, label: "Mon petit site"} -- est une copie de --> site-template;
+  site-template -- importe le thème --> mimoza;
+  site-template o--o deploy("github/workflows/build-and-deploy.yml dans le repo site-tempalte build avec Jekyll")
+```
+
+
+
