@@ -24,4 +24,47 @@ Et pour la campagne legislative de 2024
 - [site-template-2024](https://github.com/Scribouilli/site-template-2024)
 - [toctoctoc2024](https://github.com/Scribouilli/toctoctoc2024)
 
+2/ Schéma d'interaction des composants de Scribouilli
 
+```mermaid
+graph TB
+
+    subgraph ServeurPasANous
+    Github
+    Gitlab
+    ScribouGit
+    end
+
+    subgraph Client
+    Atelier
+    end
+
+    subgraph Github
+    API-Github("API")
+    Git-Github("git")
+    end
+    subgraph Gitlab
+    API-Gitlab("API")
+    Git-Gitlab("git")
+    end
+    subgraph ScribouGit
+    API-ScribouGit("API")
+    Git-ScribouGit("git")
+    end
+    
+    subgraph Atelier
+    IsomorphicGit
+    end
+
+    IsomorphicGit-->ProxyIsomorphic-git
+    ProxyIsomorphic-git-->|🔑| Git-Github("git");
+    ProxyIsomorphic-git-->|🔑| Git-Gitlab("git");
+    ProxyIsomorphic-git-->|🔑| Git-ScribouGit("git");
+    Atelier-->Toctoctoc("Toctoctoc")-->|🔑|Atelier;
+    Atelier-->|🔑| API-Github("API");
+    Atelier-->|🔑| API-Gitlab("API");
+    Atelier-->|🔑| API-ScribouGit("API");
+
+    style Client fill:#fff,stroke:#f66,stroke-width:2px
+    style ServeurPasANous fill:#fff,stroke:#f66,stroke-width:2px
+```
