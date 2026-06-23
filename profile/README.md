@@ -68,3 +68,14 @@ graph TB
     style Client fill:#fff,stroke:#f66,stroke-width:2px
     style ServeurPasANous fill:#fff,stroke:#f66,stroke-width:2px
 ```
+
+3/
+
+```mermaid
+graph LR
+  SiteScribouilli["Sites Scribouillis"] --> Monsite@{ shape: procs, label: "Mon petit site"} -- est une copie de --> site-template;
+  site-template -- importe le thème --> mimoza  ;
+```
+
+
+
