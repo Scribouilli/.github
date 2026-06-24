@@ -1,11 +1,25 @@
-# Intention
+# Scribouilli
+## Intention
 
-0/ Permettre à des non-informaticiennes
-
+Permettre à des non-informaticien·nes
 - de créer un petit site rapidement / facilement
-- avoir une relation saine et sereine avec son contenu
+- avoir une relation sereine avec son contenu
 
-1/ Liste des dépots de code
+## Découvrir
+Vous pouvez
+- parcourir [le site de Scribouilli](https://scribouilli.org/)
+- [tester Scribouilli](https://atelier.scribouilli.org/)
+
+## Contribuer
+
+Vous pouvez contribuer :
+- **financièrement** en faisant [un don via OpenCollective](https://opencollective.com/scribouilli)
+- **en utilisant** Scribouilli et en nous racontant ce qui marche et ce qui marche moins bien, ce que vous ne comprenez pas, en nous écrivant à coucou@scribouilli.org
+- **en codant**, par exemple en regardant les issues étiquettées [🌈 Bonne première contribution !](https://github.com/orgs/Scribouilli/projects/2/views/1)
+
+Merci à vous 😊🙏
+
+### Liste des dépots de code
 
 - [Scribouilli](https://github.com/Scribouilli/scribouilli) code source de l'atelier (client)
 - [toctoctoc](https://github.com/Scribouilli/toctoctoc) outil d'authentification github, gitlab et scribougit (serveur)
@@ -24,7 +38,10 @@ Et pour la campagne legislative de 2024
 - [site-template-2024](https://github.com/Scribouilli/site-template-2024)
 - [toctoctoc2024](https://github.com/Scribouilli/toctoctoc2024)
 
-2/ Schéma d'interaction des composants de Scribouilli
+### Schéma d'interaction des composants de Scribouilli
+
+🔐 : Fournit l'authentification
+🔑 : Besoin d'authentification
 
 ```mermaid
 graph TB
@@ -60,7 +77,7 @@ graph TB
     ProxyIsomorphic-git-->|🔑| Git-Github("git");
     ProxyIsomorphic-git-->|🔑| Git-Gitlab("git");
     ProxyIsomorphic-git-->|🔑| Git-ScribouGit("git");
-    Atelier-->Toctoctoc("Toctoctoc")-->|🔑|Atelier;
+    Atelier-->Toctoctoc("Toctoctoc")-->|🔐|Atelier;
     Atelier-->|🔑| API-Github("API");
     Atelier-->|🔑| API-Gitlab("API");
     Atelier-->|🔑| API-ScribouGit("API");
