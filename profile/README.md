@@ -15,7 +15,7 @@ Vous pouvez
 Vous pouvez contribuer :
 - **financièrement** en faisant [un don via OpenCollective](https://opencollective.com/scribouilli)
 - **en utilisant** Scribouilli et en nous racontant ce qui marche et ce qui marche moins bien, ce que vous ne comprenez pas, en nous écrivant à coucou@scribouilli.org
-- **en codant**, par exemple en regardant les issues étiquettées [🌈 Bonne première contribution !](https://github.com/orgs/Scribouilli/projects/2/views/1)
+- **en codant**, par exemple en regardant les issues étiquettées [🌈 Bonne première contribution !](https://github.com/orgs/Scribouilli/projects/2/views/1?filterQuery=label%3A%22%F0%9F%8C%88+Bonne+premi%C3%A8re+contribution+%21%22) (ou un autre ticket au choix dans la [pépinière](https://github.com/orgs/Scribouilli/projects/2/views/1)
 
 Merci à vous 😊🙏
 
