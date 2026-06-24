@@ -40,8 +40,8 @@ Et pour la campagne legislative de 2024
 
 ### Schéma d'interaction des composants de Scribouilli
 
-🔐 : Fournit l'authentification
-🔑 : Besoin d'authentification
+- 🔐 : Fournit l'authentification
+- 🔑 : Besoin d'authentification
 
 ```mermaid
 graph TB
